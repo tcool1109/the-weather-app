@@ -1,0 +1,50 @@
+body {
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+
+.weatherpic {
+  text-align: center;
+}
+.citysearch {
+  text-align: center;
+  font-size: 28px;
+  padding: 40px 10px;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  font-family: "Ubuntu", sans-serif;
+}
+.col-12 {
+  text-align: center;
+  margin: 5px auto;
+  padding: 5px 5px;
+}
+.card {
+  text-align: center;
+  background-color: #d7edf7;
+  margin: 0 auto;
+}
+.row {
+  display: block;
+  padding: 10px 20px;
+  margin: 0 auto;
+  font-weight: 150;
+}
+.day-length {
+  font-size: 16px;
+  font-weight: 150;
+}
+.container {
+  display: grid;
+}
+ul {
+  list-style: none;
+  font-size: 16px;
+}
+.units {
+  font-size: 12px;
+  position: relative;
+  top: -10px;
+}
