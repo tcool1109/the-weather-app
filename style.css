@@ -17,6 +17,9 @@ h2 {
 h3 {
   font-family: "Ubuntu", sans-serif;
 }
+h5 {
+  text-transform: capitalize;
+}
 .col-12 {
   text-align: center;
   margin: 5px auto;
@@ -59,4 +62,15 @@ ul {
 }
 button:hover {
   transition: all 200ms;
+}
+.weather {
+  font-size: 18px;
+}
+.card-subtitle {
+  font-size: 30px;
+  padding: 5px 10px 5px 10px;
+  margin: 0 auto;
+}
+.icon {
+  font-size: 16px;
 }

@@ -27,10 +27,9 @@
         <h1>
             <form class="citysearch" id="search-form">
                 <input type="text" placeholder="Change city" autofocus="on" autocomplete="off" id="search-line">
-                <input type="submit" value="Search" 
-               <div class="citysearch">
-                <button class="clicker" id="current-location-button">
-                    Current
+                <input type="submit" value="Search">
+               <div class="citysearch"></div>
+               
 
             </form>
 
@@ -38,7 +37,7 @@
         <h2>
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h3 id="place" class="card-title">Nairobi</h3>
+                    <h3 id="place" class="card-title"></h3>
                     <ul>
                         <li id="time">
 
@@ -47,53 +46,31 @@
                     <div class="degrees">
 
 
-                        <h4 class="card-subtitle"><span id="temperature">65</span>º <span class="units"> <a href="#"
+                        <h4 class="card-subtitle"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="clear" id= "icon"/><span id="temperature"></span>  º <span class="units"> <a href="#"
                                     id="fahrenheit-link"> ºF </a>|<a href="#" id="celsius-link">ºC</a>
                             </span> </h4>
                     </div>
-                    <h5 class="card-subtitle mb-2">Partly Cloudy 🌤</h5>
+                    <h5 class="card-subtitle mb-2"><span id="description"></span></h5>
                     <div class="row">
-                        <div class="day-length">
-
-                            Sunrise 6:24 am
+                        <div class="weather">Humidity: <span id="humidity"></span>
+%
                             <br />
-                            Sunset 6:36 pm
-
-
+                            <div class="air"> Wind: <span id= "wind"></span>
+                            
+km/h
+</div>
                         </div>
                     </div>
                 </div>
 
         </h2>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">7 Day Forecast</h5>
+        
 
 
 
 
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <strong> Today
-                        79º/ </strong> 59º
-                    <div class="col-12">
-                        <strong>Monday 🌤 76º/ </strong> 59º
-                        <div class="col-12">
-                            <strong> Tuesday ☀️ 78º/ </strong>58º
-                            <div class="col-12">
-                                <strong> Wednesday 🌤 79º/ </strong>60º
-                                <div class="col-12">
-                                    <strong> Thursday 🌤 79º/ </strong>59º
-                                    <div class="col-12">
-                                        <strong> Friday 🌤 81º/ </strong>59º
-                                        <div class="col-12">
-                                            <strong> Saturday 🌤 80º/ </strong> 58º
-
-                                        </div>
-
-                                    </div>
-                                    <strong> Never judge a day by its weather!</strong>
+            
                                 </div>
 
 
