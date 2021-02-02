@@ -38,8 +38,7 @@ function handleSubmit(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
-let getCurrentLocation = document.querySelector("#current-location-button");
-getCurrentLocation.addEventListener("click", currentLocationButton);
+
 
 function displayTemperature (response) {
   let temperatureElement= document.querySelector ("#temperature");
