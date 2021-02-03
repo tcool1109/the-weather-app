@@ -55,7 +55,7 @@ function showWeather(response) {
  let humidityElement= document.querySelector ("#humidity");
  let windElement= document.querySelector ("#wind"); 
  let iconElement=document.querySelector ("#icon");
- 
+ let temperatureElement=document.querySelector ("#temperature");
  document.querySelector ("#icon");
   document.querySelector ("#description");
   document.querySelector ("#humidity");
