@@ -48,6 +48,7 @@ let apiKey = "07e648b4918a63b8fcce58a15798cac7";
   axios.get(apiUrl).then(showWeather);
 }
 
+
 function showWeather(response) {
   
   let placeElement= document.querySelector("#place");
@@ -56,6 +57,7 @@ function showWeather(response) {
  let windElement= document.querySelector ("#wind"); 
  let iconElement=document.querySelector ("#icon");
  let temperatureElement=document.querySelector ("#temperature");
+ fahrenheitTemperature. response.data.main.temp
  document.querySelector ("#icon");
   document.querySelector ("#description");
   document.querySelector ("#humidity");
@@ -69,7 +71,30 @@ windElement.innerHTML= Math.round (response.data.wind.speed);
 iconElement.setAttribute ("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
+fahrenheitTemperature= null;
+function displayCelsiusTemperature (event) {
+  event.preventDefault();
   
+  let celsiusTemperature= (fahrenheitTemperature − 32) / 1.8; 
+  
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML= Math.round (celsiusTemperature);
+}
+
+let celsiusLink= document.querySelector("#celsius-link");
+celsiusLink.addEventListener ("click", displayCelsiusTemperature);
+
+function displayFahrenheitTemperature (event) {
+event.preventDefault ()
+let temperatureElement =document.querySelector ("#temperature")
+temperatureElement.innerHTML= Math.round (fahrenheitTemperature);
+
+}
+
+  let fahrenheitLink= document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener ("click", displayFahrenheitTemperature);
+
+
 
 
 
