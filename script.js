@@ -57,7 +57,7 @@ function showWeather(response) {
  let windElement= document.querySelector ("#wind"); 
  let iconElement=document.querySelector ("#icon");
  let temperatureElement=document.querySelector ("#temperature");
- fahrenheitTemperature. response.data.main.temp
+ fahrenheitTemperature= response.data.main.temp;
  document.querySelector ("#icon");
   document.querySelector ("#description");
   document.querySelector ("#humidity");
@@ -75,7 +75,7 @@ fahrenheitTemperature= null;
 function displayCelsiusTemperature (event) {
   event.preventDefault();
   
-  let celsiusTemperature= (fahrenheitTemperature − 32) / 1.8; 
+  let celsiusTemperature= Math.round ((fahrenheitTemperature − 32) / 1.8); 
   
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML= Math.round (celsiusTemperature);
