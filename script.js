@@ -75,7 +75,7 @@ fahrenheitTemperature= null;
 function displayCelsiusTemperature (event) {
   event.preventDefault();
   
-  let celsiusTemperature= Math.round ((fahrenheitTemperature − 32) / 1.8); 
+  let celsiusTemperature= Math.round ((fahrenheitTemperature - 32) / 1.8); 
   
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML= Math.round (celsiusTemperature);
